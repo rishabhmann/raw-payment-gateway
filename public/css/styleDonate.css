@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.donate-org {
+    padding: 50px 200px 0;  
+    height: 95vh;
+}
+
+.top-title {
+    padding-bottom: 100px;
+
+    display: inline-block;
+    
+    left:200px;
+}
+
+.right-header {
+    background-image: linear-gradient(to top right, rgba(101, 125, 255, 0.85), rgba(34, 34, 112, 0.85)),url(../img/donatePic.jpg);
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 40vw;
+    position: absolute;
+    right:0;
+    
+
+    
+}
+
+
+/* CONTAINER 1 SECTION */
+
+.container-1 {
+    display: inline-block;
+    position:absolute;
+    top: 27vh;
+    left: 12vw;
+
+    width:30%;
+    
+   
+}
+
+.donate-title {
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+    color:rgb(9, 9, 53);
+    
+}
+
+p{
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: rgb(136, 135, 135);
+}
+
+.donate-info{
+    margin-top:16px;
+}
+
+/* CONTAINER 2 SECTION */
+
+.container-2 {
+    display: inline-block;
+    position:absolute;
+    top: 25vh;
+    right: 15vw;
+
+    border-style: solid;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+   
+    background-color: white;
+}
+
+.payment-title{
+    padding: 50px 70px 20px;
+}
+
+.table-div {
+    padding: 0 50px 0;
+}
+
+/* button */
+
+button {
+    margin: 0 10px;
+}
+.button {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 50px;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+/* Input */
+
+input {
+    padding: 4px;
+}
+
+/* transaction animation */
+
+.transaction {
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    text-align: center;
+}
+
+.text-p {
+    text-align: center;
+    padding: 20px 0;
+}

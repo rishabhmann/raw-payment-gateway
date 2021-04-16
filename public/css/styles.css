@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    text-align: center;
+    background-color: rgba(255, 235, 205, 0.534);
+    padding: 20px;
+
+}
+
+.header {
+
+
+    background-image: linear-gradient(to right bottom, rgba(101, 125, 255, 0.85), rgba(34, 34, 112, 0.85)),
+        url(../img/donatePic.jpg);
+    background-size: cover;
+
+    background-position: top;
+
+    height: 95vh;
+    position: relative;
+
+
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    cursor: pointer;
+    /* changes cursor to clickable */
+
+    background-color: white;
+    padding: 15px 40px;
+    border-radius: 100px;
+    border: 2px solid white;
+
+    
+
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: black;
+
+}
+
+*:focus {
+    outline: 0;
+}
+
+.btn:link,
+.btn:visited {
+    
+    padding: 15px 40px;
+    display: inline-block;
+
+    position: relative;
+
+
+    transition: all 0.2s;
+
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    border-style: none;
+
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* button over  */
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+  
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  
+    /* always put content in ::after or ::break-before
+    - we need to put button behind button so,
+    - H & W = 100% means same as that of specified H&W of button
+    - border-radius same as that of button
+    - now absolute, as wee need it behind the button, so relative position of btn
+    - top&left = 0 as origin of position
+    - z index = -1 to position it behind */
+  
+    transition: all 0.4s;
+  }
+  
+  .btn-white::after {
+    background-color: white;
+  }
+  
+  .btn:hover::after {
+    transform: scaleX(1.5)  scaleY(1.6);
+    opacity: 0;
+  }
+  
+  .btn-animated {
+  
+      animation: moveButton 0.5s ease-out 0.5s;
+      animation-fill-mode: backwards;
+      /* good use of animation-fill-mode */
+  
+  }
